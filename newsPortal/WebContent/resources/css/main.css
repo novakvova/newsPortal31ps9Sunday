@@ -1,5 +1,5 @@
 .main {
-	padding-top: 50px;
+	padding-top: 120px;
 }
 
 .loginform {
@@ -7,4 +7,18 @@
     flex-direction: column;
     margin: 0px auto 24px;
     width: 304px;
+}
+
+.navbar.navbar-light{
+	background: #ff9e97 !important;
+    box-shadow: 0px 1px 4px 1px #656565d1;
+}
+
+.navbar-brand img{
+	max-height: 85px;
+}
+
+.nav-link{
+	font-size: 16px;
+    font-weight: 500;
 }
