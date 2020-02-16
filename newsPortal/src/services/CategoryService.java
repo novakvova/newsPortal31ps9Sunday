@@ -3,18 +3,22 @@ package services;
 import java.util.List;
 
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 import entities.Category;
 
 public class CategoryService {
-	
+	private SessionFactory sessionFactory;
 	private Session session;
 
-	public CategoryService(Session session) {
+	public CategoryService() {
 		super();
-		this.session = session;
+		//this.session = session;
 	}
-	
+	   public void setSessionFactory(SessionFactory sessionFactory) {
+	        this.sessionFactory = sessionFactory;
+	       this.session = sessionFactory.openSession();
+	    }
 	public Long Add(String name, String urlSlug, String description) {
 		session.beginTransaction();
 		Category cat = new Category(name, urlSlug, description);
