@@ -45,6 +45,7 @@ public class CategoryService {
 		session.getTransaction().commit();
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Category> GetAll() {
 		session.beginTransaction();
 		List<Category> categories = session.createQuery("FROM Category").list();
