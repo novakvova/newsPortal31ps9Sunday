@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Carousel</a>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-dark">
+    <a class="navbar-brand" href="#"><img src="${pageContext.request.contextPath}/resources/img/cow.png"></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,6 +13,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="${pageContext.request.contextPath}/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="${pageContext.request.contextPath}/editor">Editor</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

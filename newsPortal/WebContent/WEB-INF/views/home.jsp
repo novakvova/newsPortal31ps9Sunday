@@ -17,7 +17,6 @@
 			<a href="${pageContext.request.contextPath}/admin/category/all">Категорії</a>
 		</div>
 	</main>
-
 	<jsp:include page="container/_scripts.jsp"></jsp:include>
 </body>
 </html>

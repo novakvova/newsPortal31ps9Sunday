@@ -35,9 +35,6 @@ public class CategoryController {
 			
 			session.close();
 		} catch (Exception e) {
-			// The registry would be destroyed by the SessionFactory, but we had trouble
-			// building the SessionFactory
-			// so destroy it manually.
 			StandardServiceRegistryBuilder.destroy(registry);
 		}
 		
