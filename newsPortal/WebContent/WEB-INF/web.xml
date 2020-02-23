@@ -27,7 +27,9 @@
 	<!-- Spring Database Configuration File -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/config-beans.xml</param-value>
+		<param-value>
+			/WEB-INF/spring/*.xml
+		</param-value>
 	</context-param>
 	
 	<listener>

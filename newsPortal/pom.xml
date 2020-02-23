@@ -26,6 +26,16 @@
 					<warSourceDirectory>WebContent</warSourceDirectory>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://91.238.103.47:8080/manager/text</url>
+					<server>TomcatNewsSundayServer</server>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 
@@ -220,18 +230,18 @@
 			<artifactId>spring-websocket</artifactId>
 			<version>5.2.3.RELEASE</version>
 		</dependency>
-		
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-         <artifactId>jackson-core</artifactId>
-        <version>2.9.8</version>
-    </dependency>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>2.9.8</version>
-    </dependency>
-		
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.9.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.8</version>
+		</dependency>
+
 
 	</dependencies>
 
