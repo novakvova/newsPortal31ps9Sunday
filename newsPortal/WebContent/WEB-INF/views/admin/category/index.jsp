@@ -37,6 +37,7 @@
 					</tr>
 				</c:forEach>
 			</table>
+			<a href="${pageContext.request.contextPath}/admin/category/create">Додати</a>
 
 
 		</div>
